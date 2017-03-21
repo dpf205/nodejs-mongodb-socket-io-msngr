@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Node/Socket.io MSNGR</title>
+</head>
+<body>
+<div class="col-md-8 push-md-2">
+    <h2>Node/Socket.io MSNGR</h2>
+
+<h3>set username</h3>
+
+    <h4>Current Username: <span class="label label-info current-username"></span></h4>
+    <p><input class="username" type="text" name="username" value=""></p>
+    <p><input class="username-submit btn btn-success" type="button" name="username-submit" value="Set Username"></p>
+    <ul class="users-list"></ul>
+
+    <ul class="messages-list">
+        <!--messages displayed here-->
+    </ul>
+    <form action="index.html" class="chat-form" method="post">
+        <div class="form-group">
+            <textarea class="form-control" id="message-field"  rows="8" cols="40" ></textarea>
+            <button class="btn btn-primary pull-right" type="submit" name="button">Send</button>
+        </div>
+    </form>
+</div>
+
+  <script src="js/jquery.2.2.2.min.js"></script>
+  <script src="js/jquery.cookie.js"></script>
+  <script src="js/socket.io.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
